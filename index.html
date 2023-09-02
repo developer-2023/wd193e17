@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Radio (brand, frequency, type) {
+            this.brand = brand;
+            this.frequency = frequency;
+            this.type = type;
+            this.getDetails = function () {
+                console.log(this.brand + ", o częstotliwości " + this.frequency + ", " + this.type);
+            }
+        }
+
+        let radio1 = new Radio("Sony", "100.0 FM", "analogowe.");
+        let radio2 = new Radio("Sony", "100.0 FM", "analogowe.");
+        let radio3 = new Radio("Sony", "100.0 FM", "analogowe.");
+        radio1.getDetails();
+        radio2.getDetails();
+        radio3.getDetails();
+    </script>
+</body>
+</html>
